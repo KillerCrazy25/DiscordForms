@@ -1,0 +1,34 @@
+{
+	"app_title" : "ServerName Application",
+	"button_name" : "Apply to ServerName",
+
+	"embed_name" : "Apply to ServerName",
+	"embed_description" : "To apply to ServerName, click the button below and fill out the form.",
+
+	"submit_channel_id" : 999122021369774120,
+	"submit_message" : "Your application has been submitted!",
+
+	"questions" : [
+		"What is your discord user?", 
+		"What is your minecraft nickname?", 
+		"Have you ever been on any server before?",
+		"What are you best at in Technical Minecraft?",
+		"Where do you live?"
+	],
+	"styles" : ["short", "short", "short", "short", "short"],
+	"required" : [true, true, true, true, false],
+	"placeholders" : [
+		"Example: KillerCrazy25#2049",
+		"Example: KillerCrazy25",
+		"Example: Yes, I have.",
+		"Example: Digger.",
+		"Example: Bogota, Colombia. (Don't specify anymore)"
+	],
+	"custom_ids" : [
+		"discord_user",
+		"minecraft_nickname",
+		"experience",
+		"best_at",
+		"location"
+	]
+} 
