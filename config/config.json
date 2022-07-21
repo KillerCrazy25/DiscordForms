@@ -1,0 +1,8 @@
+{
+	"prefix" : "$",
+	"guild_ids" : [
+		988216045024198746
+	],
+	"questions_timeout" : 60,
+	"confirmation_timeout" : 15
+}

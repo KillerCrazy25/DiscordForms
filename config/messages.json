@@ -1,0 +1,40 @@
+{
+	"question_not_answered_message" : "Question not answered.",
+
+	"configuration_started_message" : "Configuration started. Check your DM to start setting up the bot!",
+	"configuration_timed_out_message" : "Timed out waiting for configuration. Please answer the questions within 60 seconds.",
+
+	"submit_message" : "Your application has been submitted!",
+
+	"sent_button_to_channel_message" : "Successfully sent button to channel.",
+	"send_button_to_channel_description" : "The channel to send the button to.",
+
+	"configuration_cancel_message" : "Configuration cancelled. Exiting configuration mode...",
+	"configuration_not_cancelled_message" : "Configuration not cancelled. Let's make like this never happened...",
+	"configuration_cancel_confirmation_message" : "Are you sure you want to cancel the configuration?",
+	"configuration_timeout_confirmation_message" : "You are not sure I guess...",
+	
+	"start_config_message" : "Welcome to the configuration!\n\nTo start setting up the bot, please specify the CHANNEL ID of the channel you want the bot to post the forms to.\n\nExample: `988216045682696204`. If you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_channel_message" : "Channel has been set to <#{}>.",
+
+	"app_title_message" : "Please enter the title that you want to use for your application.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_title_message" : "Application title has been set to **{}**.",
+
+	"app_custom_id_message" : "Please enter the custom id that you want to use for your application.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_custom_id_message" : "Application custom id has been set to **{}**.",
+
+	"app_button_name_message" : "Please enter the name that you want to use for the button.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_button_name_message" : "Application button name has been set to **{}**.",
+
+	"app_embed_name_message" : "Please enter the title that you want to use for the embed.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_embed_name_message" : "Application embed  has been set to **{}**.",
+
+	"app_embed_description_message" : "Please enter the description that you want to use for the embed.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_embed_description_message" : "Application embed description has been set to **{}**.",
+
+	"question_message" : "Please enter the question that you want to ask.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_question_message" : "Question added. Question **{}**.",
+
+	"placeholder_message" : "Please enter the placeholder that you want to use for question `{}`.\n\nTo cancel the configuration, type `cancel`.",
+	"configuration_placeholder_message" : "Placeholder added to question `{}`. Placeholder **{}**."
+}

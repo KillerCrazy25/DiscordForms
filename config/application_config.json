@@ -1,0 +1,50 @@
+{
+    "app_title": "Bullet Application",
+    "app_custom_id": "control:app",
+    "button_name": "Apply to Dummy Server",
+    "embed_name": "Apply to Dummy Server",
+    "embed_description": "To apply to Dummy Server, click the button below and fill out the form.",
+    "submit_channel_id": 988216045682696204,
+    "questions": [
+        {
+            "question": "What is your discord user?",
+            "placeholder": "Example: KillerCrazy25#2049",
+            "required": true,
+            "style": "input",
+            "input_style": "short",
+            "custom_id": "discord_user"
+        },
+        {
+            "question": "What is your minecraft nickname?",
+            "placeholder": "Example: KillerCrazy25",
+            "required": true,
+            "style": "input",
+            "input_style": "short",
+            "custom_id": "minecraft_nickname"
+        },
+        {
+            "question": "Have you ever been on any server before?",
+            "placeholder": "Example: Yes, I have.",
+            "required": true,
+            "style": "input",
+            "input_style": "short",
+            "custom_id": "experience"
+        },
+        {
+            "question": "What are you best at in Technical Minecraft?",
+            "placeholder": "Example: Digger.",
+            "required": true,
+            "style": "input",
+            "input_style": "short",
+            "custom_id": "best_at"
+        },
+        {
+            "question": "Where do you live?",
+            "placeholder": "Example: Bogota, Colombia. (Don't specify anymore)",
+            "required": false,
+            "style": "input",
+            "input_style": "short",
+            "custom_id": "location"
+        }
+    ]
+}
