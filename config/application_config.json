@@ -1,10 +1,14 @@
 {
-    "app_title": "Bullet Application",
+    "app_title": "Control SMP Application",
     "app_custom_id": "control:app",
+
     "button_name": "Apply to Dummy Server",
+
     "embed_name": "Apply to Dummy Server",
     "embed_description": "To apply to Dummy Server, click the button below and fill out the form.",
+
     "submit_channel_id": 988216045682696204,
+
     "questions": [
         {
             "question": "What is your discord user?",

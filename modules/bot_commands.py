@@ -12,7 +12,9 @@ class ConfirmationView(nextcord.ui.View):
 
 	async def on_timeout(self):
 		for child in self.children:
-			child.disabled = True		
+			child.disabled = True
+
+		await self.message.edit(content = configuration_timeout_confirmation_message, view = self)
 
 	@nextcord.ui.button(label = "I'm sure, exit.", style = nextcord.ButtonStyle.red)
 	async def confirm(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
@@ -30,8 +32,11 @@ class ConfirmationView(nextcord.ui.View):
 		for child in self.children:
 			child.disabled = True
 		await interaction.message.edit(content = configuration_not_cancelled_message, view = self)
+
+# Configuration Cog
 	
 class Configuration(commands.Cog, name = "Bot Configuration Command"):
+	"""Bot commands module."""
 	
 	# Configuration Constructor
 
@@ -41,6 +46,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 	# Config Command
 
 	@commands.command(name = "config", description = "Configure the bot.")
+	@commands.guild_only()
 	async def config_bot(self, ctx : commands.Context):
 		config_alive = True
 		await ctx.reply(configuration_started_message)
@@ -70,7 +76,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 			elif msg.content.lower() == "cancel":
 				view = ConfirmationView()
 
-				await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+				view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 				await view.wait()
 
@@ -117,7 +123,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 				elif msg.content.lower() == "cancel":
 					view = ConfirmationView()
 
-					await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+					view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 					await view.wait()
 
@@ -164,7 +170,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 				elif msg.content.lower() == "cancel":
 					view = ConfirmationView()
 
-					await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+					view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 					await view.wait()
 
@@ -210,7 +216,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 				elif msg.content.lower() == "cancel":
 					view = ConfirmationView()
 
-					await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+					view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 					await view.wait()
 
@@ -256,7 +262,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 				elif msg.content.lower() == "cancel":
 					view = ConfirmationView()
 
-					await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+					view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 					await view.wait()
 
@@ -302,7 +308,7 @@ class Configuration(commands.Cog, name = "Bot Configuration Command"):
 				elif msg.content.lower() == "cancel":
 					view = ConfirmationView()
 
-					await ctx.author.send(configuration_cancel_confirmation_message, view = view)
+					view.message = await ctx.author.send(configuration_cancel_confirmation_message, view = view)
 
 					await view.wait()
 

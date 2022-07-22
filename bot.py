@@ -103,10 +103,8 @@ async def on_ready():
 for file in os.listdir("./modules"):
 	if file.endswith(".py"):
 		bot.load_extension(f"modules.{file[:-3]}")
-		print("Loaded module: " + file)
-
-
+		print("Loaded module: " + file[:-3])
 
 # Run Bot
-if __name__ == "__main__":	
-	bot.run(TOKEN)
+
+bot.run(TOKEN)

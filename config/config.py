@@ -21,6 +21,8 @@ with open("./config/messages.json") as f:
 PREFIX = config["prefix"]
 TOKEN = os.getenv("TOKEN")
 
+admin_role_id = config["admin_role_id"]
+
 GUILD_IDS = config["guild_ids"]
 
 questions_timeout = config["questions_timeout"]
@@ -56,6 +58,8 @@ configuration_cancel_message = messages["configuration_cancel_message"]
 configuration_not_cancelled_message = messages["configuration_not_cancelled_message"]
 configuration_cancel_confirmation_message = messages["configuration_cancel_confirmation_message"]
 configuration_timeout_confirmation_message = messages["configuration_timeout_confirmation_message"]
+
+error_message = messages["error_message"]
 
 start_config_message = messages["start_config_message"]
 configuration_channel_message = messages["configuration_channel_message"]
