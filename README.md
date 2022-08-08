@@ -1,4 +1,4 @@
-# What Is Discord Forms?
+# Introduction
 
 Simple Discord Bot that uses discord modals to create applications like Google Forms.
 
@@ -51,7 +51,7 @@ If you did that steps correctly, the bot should have joined the server that you 
   
 ## `application_config.json` Configuration
 
-  #### If you don't know JSON syntax, it's better to configure the bot using the `$config` command.**
+  #### If you don't know [JSON syntax](https://www.w3schools.com/js/js_json_syntax.asp), it's better to configure the bot using the `$config` command.**
 
   * `app_title` -> The title of discord modal (form).
   * `app_custom_id` -> The custom of discord modal (form).
@@ -69,4 +69,8 @@ If you did that steps correctly, the bot should have joined the server that you 
       * `required` -> The answer is necessary to submit the application?
       * `style` -> The style of the answer field.
       * `input_style` -> If the row above is `input`, select the type of input of your answer field.
-      * `custom_id` -> The custom id of your question.    
+      * `custom_id` -> The custom id of your question.  
+      
+## Contributing
+
+For contributing, please read [this article](https://github.com/KillerCrazy25/DiscordForms/wiki/contributing/)
