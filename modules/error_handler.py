@@ -4,7 +4,9 @@ from nextcord.ext import commands
 from datetime import datetime
 from pytz import timezone
 
-from config.config import *
+from utils.config import *
+
+from traceback import print_exception
 
 class ErrorHandler(commands.Cog, name = "Error Handler"):
 	"""Basic error handler, can be improved a lot."""
@@ -152,6 +154,7 @@ class ErrorHandler(commands.Cog, name = "Error Handler"):
 			embed.add_field(name = "Error Not Handled | Unknown Error", value = "**Error description:** Error is not handled by the bot. I can't provide more information about your error :(.")
 
 			await ctx.send(embed = embed)
+			print_exception(error)
 
 def setup(bot : commands.Bot):
 	bot.add_cog(ErrorHandler(bot))
