@@ -23,12 +23,13 @@ If you did that steps correctly, the bot should have joined the server that you 
 1) Ensure that you have [Python 3.10](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed in the machine that the bot is gonna run.
 2) Clone the repository using `git clone https://github.com/KillerCrazy25/DiscordForms` or just download it.
 3) Then install all the requirements with the command below:
-
+    ```py
     Linux / Mac OS
-    `python3 -m pip install -r requirements.txt`
+    python3 -m pip install -r requirements.txt
 
     Windows
-    `python -m pip install -r requirements.txt`
+    python -m pip install -r requirements.txt
+    ```
 
 **Ensure that you have developer mode enabled on discord. (That's gonna be useful because you will be able to copy guild ids, channel ids, etc.)**
 
@@ -38,7 +39,7 @@ If you did that steps correctly, the bot should have joined the server that you 
 
 ## Creating environment file with bot's token
 
-1) Create a file with name **.env**.
+1) Rename **.example.env** to **.env**.
 2) Open that file with any text editor and write the next text: `TOKEN=PASTE_HERE_YOUR_BOT_TOKEN_THAT_YOU_GOT_FROM_DISCORD_DEVELOPERS_WITHOUT_QUOTES`.
 
 ## `config.json` Configuration
