@@ -1,8 +1,10 @@
 {
 	"question_not_answered_message" : "Question not answered.",
 
-	"configuration_started_message" : "Configuration started. Check your DM to start setting up the bot!",
-	"configuration_timed_out_message" : "Timed out waiting for configuration. Please answer the questions within 60 seconds.",
+	"configuration_started_message" : "Configuration started. Please answer the questions!",
+	"configuration_timed_out_message" : "Timed out waiting for configuration. Please answer the questions within {} seconds.",
+
+	"configuration_error_message" : "You can't setup the bot while it's already being configured.",
 
 	"submit_message" : "Your application has been submitted!",
 
@@ -16,27 +18,47 @@
 
 	"error_message" : "An error has ocurred trying to execute your command.",
 	
-	"start_config_message" : "\n\nWelcome to the configuration!\n\nTo start setting up the bot, please specify the CHANNEL ID of the channel you want the bot to post the forms to.\n\nExample: `988216045682696204`. If you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"start_config_message" : "\n\nWelcome to the configuration!\n\nTo start setting up the bot, please specify the CHANNEL ID of the channel you want the bot to post the forms to.\n\nExample: `988216045682696204`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_channel_message" : "Channel has been set to <#{}>.",
 
-	"app_title_message" : "\n\nPlease enter the title that you want to use for your application.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"app_title_message" : "\n\nPlease enter the title that you want to use for your application.\n\nExample: `Some application title`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_title_message" : "Application title has been set to **{}**.",
 
-	"app_custom_id_message" : "\n\nPlease enter the custom id that you want to use for your application.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"app_custom_id_message" : "\n\nPlease enter the custom id that you want to use for your application.\n\n**DON'T USE SPACES, THAT'S GONNA BREAK THE BOT**\n\nExample: `some:custom_id`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_custom_id_message" : "Application custom id has been set to **{}**.",
 
-	"app_button_name_message" : "\n\nPlease enter the name that you want to use for the button.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"app_button_name_message" : "\n\nPlease enter the name that you want to use for the button.\n\nExample: `Some button name`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_button_name_message" : "Application button name has been set to **{}**.",
 
-	"app_embed_name_message" : "\n\nPlease enter the title that you want to use for the embed.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"app_embed_name_message" : "\n\nPlease enter the title that you want to use for the embed.\n\nExample: `Some embed title`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_embed_name_message" : "Application embed  has been set to **{}**.",
 
-	"app_embed_description_message" : "\n\nPlease enter the description that you want to use for the embed.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"app_embed_description_message" : "\n\nPlease enter the description that you want to use for the embed.\n\nExample: `Some embed description`.\n\nIf you want to keep default, just type `default`.\n\nTo cancel the configuration, type `cancel`.\n\n",
 	"configuration_embed_description_message" : "Application embed description has been set to **{}**.",
 
-	"question_message" : "\n\nPlease enter the question that you want to ask.\n\nTo cancel the configuration, type `cancel`.",
-	"configuration_question_message" : "Question added. Question **{}**.",
+	"config_end" : "\n\nConfiguration ended with success!\n\nTo start using the bot, type `{}sendform` to send the form to the channel you specified earlier.\n\nTo add questions to the form, type `{}addquestion`.\n\n",
 
-	"placeholder_message" : "\n\nPlease enter the placeholder that you want to use for question `{}`.\n\nTo cancel the configuration, type `cancel`.\n\n",
-	"configuration_placeholder_message" : "Placeholder added to question `{}`. Placeholder **{}**."
+	"questions_timed_out_message" : "Timed out waiting for questions. Please answer the questions within {} seconds.",
+
+	"question_message" : "\n\nWelcome to questions configuration!\n\nExample: `Example question`.\n\nPlease enter the question that you want to ask.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_question_message" : "Question added. Question: **{}**.",
+
+	"placeholder_message" : "\n\nPlease enter the placeholder that you want to use.\n\nExample: `Example placeholder`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_placeholder_message" : "Placeholder added. Placeholder: **{}**.",
+
+	"required_message" : "\n\nPlease enter if your question is gonna be required or not.\n\nSupported Values: `true` or `false`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_required_message" : "Required value added. Value: **{}**.",
+
+	"style_message" : "\n\nPlease enter the style of your question.\n\nSupported Values: `input`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_style_message" : "Question style added. Style: **{}**.",
+
+	"input_style_message" : "\n\nPlease enter the input style of your question.\n\nSupported Values: `short` or `paragraph`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_input_style_message" : "Question's input style added. Input style: **{}**.",
+
+	"question_custom_id_message" : "\n\nPlease enter the custom id of your question\n\nExample: `some:custom_id`.\n\nTo cancel the configuration, type `cancel`.\n\n",
+	"configuration_question_custom_id_message" : "Custom ID added. Custom ID: **{}**.",
+
+	"questions_end" : "\n\nQuestion configuration ended with success!\n\n",
+
+	"questions_summary_message" : "\n\n**Question #{}**:\n\nQuestion: `{}`\n\nPlaceholder: `{}`\n\nRequired: `{}`\n\nStyle: `{}`\n\nInput style: `{}`\n\nCustom ID: `{}`\n\n\n\nTo add another question, type `{}addquestion`.\n\nTo send the form, type `{}sendform`\n\n"
 }

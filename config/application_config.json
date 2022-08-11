@@ -1,54 +1,34 @@
 {
-    "app_title": "Control SMP Application",
-    "app_custom_id": "control:app",
-
-    "button_name": "Apply to Dummy Server",
-
-    "embed_name": "Apply to Dummy Server",
-    "embed_description": "To apply to Dummy Server, click the button below and fill out the form.",
-
+    "app_title": "Test Title",
+    "app_custom_id": "test_custom:id",
+    "button_name": "Button Name",
+    "embed_name": "Title lol",
+    "embed_description": "Descea",
     "submit_channel_id": 988216045682696204,
-
     "questions": [
         {
-            "question": "What is your discord user?",
-            "placeholder": "Example: KillerCrazy25#2049",
+            "question": "Example question",
+            "placeholder": "Example placeholder",
             "required": true,
             "style": "input",
             "input_style": "short",
-            "custom_id": "discord_user"
+            "custom_id": "test_id"
         },
         {
-            "question": "What is your minecraft nickname?",
-            "placeholder": "Example: KillerCrazy25",
+            "question": "Example 2",
+            "placeholder": "Example Placeholder 2",
             "required": true,
             "style": "input",
             "input_style": "short",
-            "custom_id": "minecraft_nickname"
+            "custom_id": "test_id_2"
         },
         {
-            "question": "Have you ever been on any server before?",
-            "placeholder": "Example: Yes, I have.",
+            "question": "testing question",
+            "placeholder": "testing placeholder",
             "required": true,
             "style": "input",
             "input_style": "short",
-            "custom_id": "experience"
-        },
-        {
-            "question": "What are you best at in Technical Minecraft?",
-            "placeholder": "Example: Digger.",
-            "required": true,
-            "style": "input",
-            "input_style": "short",
-            "custom_id": "best_at"
-        },
-        {
-            "question": "Where do you live?",
-            "placeholder": "Example: Bogota, Colombia. (Don't specify anymore)",
-            "required": false,
-            "style": "input",
-            "input_style": "short",
-            "custom_id": "location"
+            "custom_id": "custom_id_short"
         }
     ]
 }

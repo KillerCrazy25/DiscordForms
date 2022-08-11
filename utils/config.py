@@ -45,9 +45,10 @@ submit_channel_id = app_config["submit_channel_id"]
 
 question_not_answered_message = messages["question_not_answered_message"]
 
-
 configuration_started_message = messages["configuration_started_message"]
 configuration_timed_out_message = messages["configuration_timed_out_message"]
+
+configuration_error_message = messages["configuration_error_message"]
 
 submit_message = messages["submit_message"]
 
@@ -76,8 +77,31 @@ configuration_button_name_message = messages["configuration_button_name_message"
 app_embed_name_message = messages["app_embed_name_message"]
 configuration_embed_name_message = messages["configuration_embed_name_message"]
 
+config_end = messages["config_end"]
+
+questions_timed_out_message = messages["questions_timed_out_message"]
+
 app_embed_description_message = messages["app_embed_description_message"]
 configuration_embed_description_message = messages["configuration_embed_description_message"]
 
 question_message = messages["question_message"]
 configuration_question_message = messages["configuration_question_message"]
+
+placeholder_message = messages["placeholder_message"]
+configuration_placeholder_message = messages["configuration_placeholder_message"]
+
+required_message = messages["required_message"]
+configuration_required_message = messages["configuration_required_message"]
+
+style_message = messages["style_message"]
+configuration_style_message = messages["configuration_style_message"]
+
+input_style_message = messages["input_style_message"]
+configuration_input_style_message = messages["configuration_input_style_message"]
+
+question_custom_id_message = messages["question_custom_id_message"]
+configuration_question_custom_id_message = messages["configuration_question_custom_id_message"]
+
+questions_end = messages["questions_end"]
+
+questions_summary_message = messages["questions_summary_message"]
