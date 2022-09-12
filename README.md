@@ -72,6 +72,17 @@ If you did that steps correctly, the bot should have joined the server that you 
       * `input_style` -> If the row above is `input`, select the type of input of your answer field.
       * `custom_id` -> The custom id of your question.  
       
+# Running Bot
+
+To run the bot you need to run the following command:
+    ```py
+    Linux / Mac OS
+    python3 bot.py
+
+    Windows
+    python bot.py
+    ```
+      
 ## Contributing
 
 For contributing, please read [this article](https://github.com/KillerCrazy25/DiscordForms/wiki/contributing/)
