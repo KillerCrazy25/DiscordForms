@@ -75,13 +75,12 @@ If you did that steps correctly, the bot should have joined the server that you 
 # Running Bot
 
 To run the bot you need to run the following command:
-    ```py
+
     Linux / Mac OS
     python3 bot.py
-
+    
     Windows
     python bot.py
-    ```
       
 ## Contributing
 
